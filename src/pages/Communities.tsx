@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import DashboardLayout from '../layouts/DashboardLayout';
-import CommunitiesHeader from '../components/Communities/CommunitiesHeader';
-import YourCommunities from '../components/Communities/YourCommunities';
-import SuggestedCommunities from '../components/Communities/SuggestedCommunities';
-import AIForCommunities from '../components/Communities/AIForCommunities';
-import JoinRequests from '../components/Communities/JoinRequests';
-import FromYourCommunities from '../components/Communities/FromYourCommunities';
-import DiscoverByTag from '../components/Communities/DiscoverByTag';
+import CommunitiesHeader from '../components/communities/CommunitiesHeader';
+import YourCommunities from '../components/communities/YourCommunities';
+import SuggestedCommunities from '../components/communities/SuggestedCommunities';
+import AIForCommunities from '../components/communities/AIForCommunities';
+import JoinRequests from '../components/communities/JoinRequests';
+import FromYourCommunities from '../components/communities/FromYourCommunities';
+import DiscoverByTag from '../components/communities/DiscoverByTag';
 import { Plus } from 'lucide-react';
 
 const filters = ['For you', 'Courses', 'Societies', 'Halls', 'Interests', 'Near me'];
