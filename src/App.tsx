@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Customer Pages
-import IKampusDashboard from './pages/iKampusDashboard';
+import IKampusDashboard from './pages/IKampusDashboard';
 import Communities from './pages/Communities';
 import Assistant from './pages/Assistant';
 import Chat from './pages/Chat';
