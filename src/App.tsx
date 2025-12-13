@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Customer Pages
-import IKampusDashboard from './pages/IKampusDashboard';
-import Communities from './pages/Communities';
-import Assistant from './pages/Assistant';
-import Chat from './pages/Chat';
-import Profile from './pages/Profile';
+import CampusFeed from './pages/CampusFeed';
+import Chat from './pages/AiChat';
+import Chats from './pages/Chats';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -13,12 +12,12 @@ function App() {
           <Router>
             <Routes>
               {/* Customer Routes */}
-              <Route path="/" element={<IKampusDashboard />} />
-              <Route path="/communities" element={<Communities />} />
-              <Route path="/assistant" element={<Assistant />} />
-              <Route path="/profellow" element={<Chat />} />
-              <Route path="/profile" element={<Profile />} />
-
+              <Route path="/" element={<Chat />} />
+              <Route path="/campusFeed" element={<CampusFeed />} />
+              <Route path="/chats" element={<Chats />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/communities" element={<CampusFeed />} />
+              <Route path="/alumni" element={<CampusFeed />} />
             </Routes>
       
           </Router>
