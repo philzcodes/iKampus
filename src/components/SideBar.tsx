@@ -16,6 +16,8 @@ import {
   Briefcase,
   GraduationCap,
 } from 'lucide-react';
+import UserProfileCard from './UserProfileCard';
+import logo from '../assets/ikampus-logo.jpg';
 
 // --- Data Types ---
 interface SidebarItemProps {
@@ -92,10 +94,15 @@ export const Sidebar: React.FC = () => {
       {/* Top Section: New Chat & Logo */}
       <div className="flex items-center justify-between p-4 border-b">
         <div className="flex items-center space-x-2">
-          <Menu className="w-6 h-6 text-gray-700" />
+          {/* <Menu className="w-6 h-6 text-gray-700" /> */}
+          <img src={logo} alt="" className="w-6 h-6" />
           <span className="text-lg font-bold text-gray-800">iKampus</span>
         </div>
       </div>
+
+     <div className="p-4">
+       <UserProfileCard />
+     </div>
 
       {/* Main Navigation */}
       <div className="p-4 space-y-1 border-b">
