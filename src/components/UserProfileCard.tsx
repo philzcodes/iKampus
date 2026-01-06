@@ -28,20 +28,20 @@ const UserProfileCard: React.FC = () => {
 
   // Custom colors for high fidelity (using arbitrary values)
   const PURPLE_ACTIVE_BG = 'bg-[#9333EA]';
-  const DARK_CARD_BG = 'bg-[#1E1E1E]';
-  const DARK_BUTTON_BG = 'bg-[#383838]';
+  const LIGHT_CARD_BG = 'bg-white';
+  const LIGHT_BUTTON_BG = 'bg-gray-100';
 
   return (
     <div 
       // Card container styling
-      className={`p-4 rounded-xl text-white max-w-xs ${DARK_CARD_BG} shadow-2xl mx-auto`}
+      className={`p-4 rounded-xl text-gray-900 max-w-xs ${LIGHT_CARD_BG} shadow-2xl mx-auto border border-gray-100`}
     >
       
       {/* Header Section */}
       <h2 className="text-2xl font-semibold mb-1">
         {name}
       </h2>
-      <p className="text-sm text-gray-400 mb-4">
+      <p className="text-sm text-gray-500 mb-4">
         {major} student · Year {year}
       </p>
 
@@ -55,7 +55,7 @@ const UserProfileCard: React.FC = () => {
         </button>
         {/* Inactive Buttons */}
         <button 
-          className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${DARK_BUTTON_BG}`}
+          className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors text-gray-700 ${LIGHT_BUTTON_BG} hover:bg-gray-200`}
         >
           Posts
         </button>
@@ -88,22 +88,22 @@ const UserProfileCard: React.FC = () => {
         
         {/* Year Details Column */}
         <div>
-          <p className="text-sm text-gray-400">Year</p>
+          <p className="text-sm text-gray-500">Year</p>
           <p className="text-xl font-semibold leading-tight mt-0.5">
             Year {year}
           </p>
-          <p className="text-sm text-gray-400 mt-1">
+          <p className="text-sm text-gray-500 mt-1">
             {major}
           </p>
         </div>
 
         {/* Campus Details Column */}
         <div>
-          <p className="text-sm text-gray-400">Campus</p>
+          <p className="text-sm text-gray-500">Campus</p>
           <p className="text-xl font-semibold leading-tight mt-0.5">
             {campus}
           </p>
-          <p className="text-sm text-gray-400 mt-1">
+          <p className="text-sm text-gray-500 mt-1">
             {campusCode}
           </p>
         </div>
